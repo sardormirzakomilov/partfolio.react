@@ -1,8 +1,7 @@
 import React from 'react';
 import "./Contact.css";
-import { HiOutlineMail } from 'react-icons/hi';
-import { RiMessengerLine } from 'react-icons/ri';
-import { BsWhatsapp } from 'react-icons/bs';
+import { BsInstagram } from 'react-icons/bs';
+import { FaTelegramPlane } from 'react-icons/fa';
 
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
@@ -22,28 +21,26 @@ const Contact = () => {
         <div className="contact_options">
           <div className="mycontainer">
             <article className="contact_option">
-              <HiOutlineMail className='contact_option-icon' />
+              <BsInstagram className='contact_option-icon' />
               <h4>Email</h4>
-              <h5>@gmail.com</h5>
-              <a href="mailto:mirzakomilovs@gmail.com" target='_blank '>Send a message </a>
+              <label htmlFor="name"><h5>nick_7703s</h5></label>
+              <a href="https://www.instagram.com/nick_7703s/" target="_blank ">Send a message</a>
+
             </article>
+            
             <article className="contact_option">
-              <RiMessengerLine className='contact_option-icon' />
-              <h4>Messenger</h4>
-              <h5>egatutorials</h5>
-              <a href="https://m.me/TemurbekShukurov0707" target='_blank '>Send a message</a>
-            </article>
-            <article className="contact_option">
-              <BsWhatsapp className='contact_option-icon' />
-              <h4>WhatsApp</h4>
-              <h5>+12345679</h5>
-              <a href="https://api.whatsapp.com/send?phone+998337074105" target='_blank '>Send a message </a>
+              <FaTelegramPlane className='contact_option-icon' /> 
+              <h4>Telegram</h4>
+              <label htmlFor="name"><h5>nick_7703s</h5></label>
+              <a href="https://t.me/nick_7703s" target='_blank '>Send a message </a>
+
+
             </article>
           </div>
         </div>
         <form ref={form} onSubmit={sendEmail}>
           <div className="mycontainer1">
-            <input type="text" name='name' placeholder='Your Full Name' required />
+            <input type="text" name='name' id='name' placeholder='Your Full Name' required />
             <input type="email" name='email' placeholder='Your Email' required />
             <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
             <button type='submit' className='btn btn-primary'>Send Message</button>

@@ -1,5 +1,5 @@
 import React from 'react';
-import "./headre.css";
+import "./header.css";
 import CTA from './CTA';
 import Langu from './Lang';
 import ME from '../../assets/img/man3.png';
@@ -20,7 +20,7 @@ const Header = () => {
           <div className="me"> 
             <img src={ME} alt="" />
           </div>
-          <a href="#contact" className='scroll_down'>Scrol Down</a>
+          <a href="#about" className='scroll_down'>Scrol Down</a>
         </div>
       </div>
     </header>

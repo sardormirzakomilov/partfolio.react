@@ -83,11 +83,16 @@ a:hover{
 .btn:hover{
     background: var(--color-white);
     color: var(--color-bg);
-    background-color: transparent;
+    background-color: var(--color-primary);
 }
 .btn-primary{
     background: var(--color-primary);
     color: var(--color-bg);
+    transition: var(--transition);
+}
+.btn-primary:hover{
+    color: var(--color-primary);
+    background: transparent;
 }
 img{
     display: block;

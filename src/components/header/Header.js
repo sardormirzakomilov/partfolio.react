@@ -13,12 +13,13 @@ const Header = () => {
   })
   return (
     <header id='header'>
+      
       <div className="container">
         <div className="header_container">
           <h5 className='hh' data-aos="fade-up"
             data-aos-duration="2000">Hello ,I'm</h5>
           <h1 data-aos="fade-up"
-            data-aos-duration="2000">Nick</h1>
+            data-aos-duration="2000" >Sardor</h1>
           <h5 data-aos="fade-up"
             data-aos-duration="2000" className="text-light">Web Developer</h5>
           <CTA />

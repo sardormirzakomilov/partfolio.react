@@ -16,9 +16,9 @@ function About() {
   return (
     <section id='about'>
       <h5 data-aos="fade-up"
-            data-aos-duration="2000">Get to Know</h5>
+            data-aos-duration="800">Get to Know</h5>
       <h2 data-aos="fade-up"
-            data-aos-duration="2000">About Me</h2>
+            data-aos-duration="800">About Me</h2>
       <div className="container about_container">
         <div className="about_me">
           <div className="about_me-image" >
@@ -27,36 +27,30 @@ function About() {
         </div>
         <div className="about_content">
           <div className="about_cards">
-            <article className="about_card">
-              <FaAward data-aos="fade-up"
-            data-aos-duration="2000" className='about_icon' />
-              <h5 data-aos="fade-up"
-            data-aos-duration="2000">Experience</h5>
-              <small data-aos="fade-up"
-            data-aos-duration="2000">1+ Years Working</small>
+            <article className="about_card" data-aos="flip-up">
+              <FaAward className='about_icon' />
+              <h5>Experience</h5>
+              <small>1+ Years Working</small>
             </article>
 
-            <article className="about_card">
-              <FiUsers data-aos="fade-up" data-aos-duration="2000" className='about_icon' />
-              <h5 data-aos="fade-up" data-aos-duration="2000" >Clients</h5>
-              <small data-aos="fade-up" data-aos-duration="2000" >15+ Worldwide</small>
+            <article className="about_card" data-aos="flip-up">
+              <FiUsers className='about_icon' />
+              <h5 >Clients</h5>
+              <small >15+ Worldwide</small>
             </article>
 
-            <article className="about_card">
-              <VscFolderLibrary data-aos="fade-up"
-            data-aos-duration="2000" className='about_icon' />
-              <h5 data-aos="fade-up"
-            data-aos-duration="2000">Projects</h5>
-              <small data-aos="fade-up"
-            data-aos-duration="2000">30+ Complited</small>
+            <article className="about_card" data-aos="flip-up">
+              <VscFolderLibrary  className='about_icon' />
+              <h5 >Projects</h5>
+              <small >30+ Complited</small>
             </article>
           </div>
           <p data-aos="fade-up"
-            data-aos-duration="2000">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nemo veritatis similique dolorem consequuntur a ipsam quisquam error accusamus doloremque repellat maxime laborum dolores eligendi quia, repudiandae harum. Alias, voluptas.
+            data-aos-duration="800">
+              Customer serviceability and timely submission of the project in a quality, reliable condition . Approach their work responsibly
           </p>
           <a data-aos="fade-up"
-            data-aos-duration="2000" href="#contact" className='btn btn-primary'>Let's Talk</a>
+            data-aos-duration="800" href="#contact" className='btn btn-primary'>Let's Talk</a>
         </div>
       </div>
     </section>

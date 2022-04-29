@@ -1,11 +1,17 @@
-import React from 'react';
+
 import "./Contact.css";
 import { BsInstagram } from 'react-icons/bs';
 import { FaTelegramPlane } from 'react-icons/fa';
-
+import React, { useEffect } from 'react';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 const Contact = () => {
+
+  useEffect(() => {
+    AOS.init();
+  })
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,7 +26,7 @@ const Contact = () => {
       <div className="container contact_container">
         <div className="contact_options">
           <div className="mycontainer">
-            <article className="contact_option">
+            <article className="contact_option" data-aos="flip-down">
               <BsInstagram className='contact_option-icon' />
               <h4>Email</h4>
               <label htmlFor="name"><h5>nick_7703s</h5></label>
@@ -28,7 +34,7 @@ const Contact = () => {
 
             </article>
             
-            <article className="contact_option">
+            <article className="contact_option" data-aos="flip-down">
               <FaTelegramPlane className='contact_option-icon' /> 
               <h4>Telegram</h4>
               <label htmlFor="name"><h5>nick_7703s</h5></label>
@@ -40,10 +46,10 @@ const Contact = () => {
         </div>
         <form ref={form} onSubmit={sendEmail}>
           <div className="mycontainer1">
-            <input type="text" name='name' id='name' placeholder='Your Full Name' required />
-            <input type="email" name='email' placeholder='Your Email' required />
-            <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
-            <button type='submit' className='btn btn-primary'>Send Message</button>
+            <input type="text" name='name' id='name' placeholder='Your Full Name' required  data-aos="flip-up"/>
+            <input type="email" name='email' placeholder='Your Email' required  data-aos="flip-up"/>
+            <textarea name="message" rows="7" placeholder='Your Message' required data-aos="flip-up"></textarea>
+            <button type='submit' className='btn btn-primary'  data-aos="flip-up">Send Message</button>
           </div>
         </form>
       </div>

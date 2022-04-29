@@ -46,10 +46,10 @@ const Testimonials = () => {
   })
   return (
     <section id='testimonials'>
-        <h5 data-aos="fade-up" data-aos-duration="2000">Review feom clients</h5>
-        <h2 data-aos="fade-up" data-aos-duration="2000">Testimonials</h2>
+        <h5 data-aos="fade-up" data-aos-duration="1000">Review feom clients</h5>
+        <h2 data-aos="fade-up" data-aos-duration="1000">Testimonials</h2>
 
-        <Swiper  data-aos="fade-up" data-aos-duration="2000" className="container testimonials_container" modules={[ Pagination]} spaceBetween={40} slidesPerView={1} pagination={{ clickable: true }}>
+        <Swiper  data-aos="fade-up" data-aos-duration="1000" className="container testimonials_container" modules={[ Pagination]} spaceBetween={40} slidesPerView={1} pagination={{ clickable: true }}>
         {
           data.map(({avatar, name, review} , index) =>{
             return(

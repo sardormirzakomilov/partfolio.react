@@ -16,7 +16,7 @@ const Experience = () => {
       <div className="container experience_container">
         <div data-aos="fade-up" data-aos-duration="2000" className="experience_frontend">
           <h3 data-aos="fade-up" data-aos-duration="2000">Frontend Development</h3>
-          <div data-aos="fade-up" data-aos-duration="2000" className="experience_content">
+          <div data-aos="flip-up" className="experience_content">
             <article className='experience_details'>
               <BsPatchCheckFill className='experience_details-icon'/>
               <div>
@@ -56,7 +56,7 @@ const Experience = () => {
         </div>
         <div data-aos="fade-up" data-aos-duration="2000" className="experience_backend">
           <h3 data-aos="fade-up" data-aos-duration="2000">Backend Development</h3>
-          <div data-aos="fade-up" data-aos-duration="2000" className="experience_content">
+          <div data-aos="flip-up" className="experience_content">
             <article className='experience_details'>
               <BsPatchCheckFill className='experience_details-icon'/>
               <div>

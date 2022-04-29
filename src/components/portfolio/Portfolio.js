@@ -59,13 +59,13 @@ const Portfolio = () => {
   })
   return (
     <section id='portfolio'>
-      <h5 data-aos="fade-up" data-aos-duration="2000">My Recent Work</h5>
-      <h2 data-aos="fade-up" data-aos-duration="2000">Portfolio</h2>
+      <h5 data-aos="fade-up" data-aos-duration="1000">My Recent Work</h5>
+      <h2 data-aos="fade-up" data-aos-duration="1000">Portfolio</h2>
       <div className="container portfolio_container">
         {
           data.map(({ id, image, title, github, demo }) => {
             return (
-              <article key={id} className='portfolio_item' data-aos="fade-up" data-aos-duration="2000">
+              <article key={id} className='portfolio_item' data-aos="fade-up" data-aos-duration="1000">
                 <div className="portfolio_item-image">
                   <img src={image} alt="" />
                 </div>

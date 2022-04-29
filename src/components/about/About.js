@@ -1,9 +1,9 @@
 import "./About.css"
-import React, { useEffect } from 'react';
 import ABME from '../../assets/img/man2.jpg'
 import { FaAward } from 'react-icons/fa'
 import { FiUsers } from 'react-icons/fi'
 import { VscFolderLibrary } from 'react-icons/vsc'
+import React, { useEffect } from 'react';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -37,12 +37,9 @@ function About() {
             </article>
 
             <article className="about_card">
-              <FiUsers data-aos="fade-up"
-            data-aos-duration="2000" className='about_icon' />
-              <h5 data-aos="fade-up"
-            data-aos-duration="2000" >Clients</h5>
-              <small data-aos="fade-up"
-            data-aos-duration="2000" >15+ Worldwide</small>
+              <FiUsers data-aos="fade-up" data-aos-duration="2000" className='about_icon' />
+              <h5 data-aos="fade-up" data-aos-duration="2000" >Clients</h5>
+              <small data-aos="fade-up" data-aos-duration="2000" >15+ Worldwide</small>
             </article>
 
             <article className="about_card">

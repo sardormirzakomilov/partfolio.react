@@ -1,4 +1,4 @@
-import React from 'react'
+
 import "./testimonials.css"
 import AVTR1 from '../assets/img/man2.jpg'
 
@@ -9,7 +9,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
+import React, { useEffect } from 'react';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const data = [
   {
@@ -39,12 +41,15 @@ const data = [
   },
 ]
 const Testimonials = () => {
+  useEffect(() => {
+    AOS.init();
+  })
   return (
     <section id='testimonials'>
-        <h5>Review feom clients</h5>
-        <h2>Testimonials</h2>
+        <h5 data-aos="fade-up" data-aos-duration="2000">Review feom clients</h5>
+        <h2 data-aos="fade-up" data-aos-duration="2000">Testimonials</h2>
 
-        <Swiper className="container testimonials_container" modules={[ Pagination]} spaceBetween={40} slidesPerView={1} pagination={{ clickable: true }}>
+        <Swiper  data-aos="fade-up" data-aos-duration="2000" className="container testimonials_container" modules={[ Pagination]} spaceBetween={40} slidesPerView={1} pagination={{ clickable: true }}>
         {
           data.map(({avatar, name, review} , index) =>{
             return(

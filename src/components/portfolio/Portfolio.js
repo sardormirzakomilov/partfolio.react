@@ -1,4 +1,4 @@
-import React from 'react'
+
 import "./portfolio.css"
 import IMG from '../../assets/img/man4.jpg'
 import IMG2 from '../../assets/img/man5.jpg'
@@ -6,6 +6,9 @@ import IMG3 from '../../assets/img/man6.jpg'
 import IMG4 from '../../assets/img/man7.jpg'
 import IMG5 from '../../assets/img/man8.jpg'
 import IMG6 from '../../assets/img/man9.jpg'
+import React, { useEffect } from 'react';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 const data = [
   {
     id: 1,
@@ -51,20 +54,23 @@ const data = [
   },
 ]
 const Portfolio = () => {
+  useEffect(() => {
+    AOS.init();
+  })
   return (
     <section id='portfolio'>
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <h5 data-aos="fade-up" data-aos-duration="2000">My Recent Work</h5>
+      <h2 data-aos="fade-up" data-aos-duration="2000">Portfolio</h2>
       <div className="container portfolio_container">
         {
           data.map(({ id, image, title, github, demo }) => {
             return (
-              <article key={id} className='portfolio_item'>
+              <article key={id} className='portfolio_item' data-aos="fade-up" data-aos-duration="2000">
                 <div className="portfolio_item-image">
                   <img src={image} alt="" />
                 </div>
                 <h3>{title}</h3>
-                <div className="portfolio_item-cta">
+                <div className="portfolio_item-cta" >
                   <a href={github} className='btn' target='_blank '>Git hub</a>
                   <a href={demo} className='btn btn-primary' target='_blank '>Live Demo</a>
                 </div>

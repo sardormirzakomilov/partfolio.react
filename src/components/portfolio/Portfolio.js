@@ -7,18 +7,34 @@ import IMG4 from '../../assets/img/man7.jpg'
 import IMG5 from '../../assets/img/man8.jpg'
 import IMG6 from '../../assets/img/man9.jpg'
 import IMG7 from '../../assets/img/man10.jpg'
+import IMG8 from '../../assets/img/man11.jpg'
+import IMG9 from '../../assets/img/man12.jpg'
 import React, { useEffect } from 'react';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 const data = [
   {
     id: 4,
+    image: IMG8,
+    title: 'Medilab',
+    github: 'https://github.com/sardormirzakomilov/Medilab',
+    demo: 'https://sardor-medilab.netlify.app/'
+  },
+  {
+    id: 7,
     image: IMG4,
     title: 'Max Proff',
     github: 'https://github.com/sardormirzakomilov/MaxProf',
     demo: 'https://sardor-maxpro.netlify.app/'
   },
 
+  {
+    id: 8,
+    image: IMG9,
+    title: 'eNno',
+    github: 'https://github.com/sardormirzakomilov/oNno',
+    demo: 'https://sardor-enno.netlify.app/'
+  },
   {
     id: 2,
     image: IMG2,

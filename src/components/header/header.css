@@ -96,6 +96,12 @@ font-size: 85px;
     .header_socials, .scroll_down{
         display: none;
     }
+    .header_container h1{
+        font-size: 55px;
+    }
+    .header_container .hh{
+        padding-top: 80px;
+    }
     .MyContainer .languages{
         width: 100%;
         display: flex;
@@ -113,4 +119,5 @@ font-size: 85px;
         height:140vh;
         padding-top: 3rem;
     }
+   
 }

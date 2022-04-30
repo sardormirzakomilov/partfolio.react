@@ -6,17 +6,19 @@ import IMG3 from '../../assets/img/man6.jpg'
 import IMG4 from '../../assets/img/man7.jpg'
 import IMG5 from '../../assets/img/man8.jpg'
 import IMG6 from '../../assets/img/man9.jpg'
+import IMG7 from '../../assets/img/man10.jpg'
 import React, { useEffect } from 'react';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 const data = [
   {
-    id: 1,
-    image: IMG,
-    title: 'Trevland',
-    github: 'https://github.com/sardormirzakomilov/travlend',
-    demo: 'https://travlend-sardor.netlify.app/'
+    id: 4,
+    image: IMG4,
+    title: 'Max Proff',
+    github: 'https://github.com/sardormirzakomilov/MaxProf',
+    demo: 'https://sardor-maxpro.netlify.app/'
   },
+
   {
     id: 2,
     image: IMG2,
@@ -25,19 +27,20 @@ const data = [
     demo: 'https://qwer-sardor.netlify.app/'
   },
   {
+    id: 6,
+    image: IMG7,
+    title: 'Chart Socetio',
+    github: 'https://github.com/sardormirzakomilov/socket.io.chat',
+    demo: 'https://chartsocetio.herokuapp.com/'
+  },
+  {
     id: 3,
     image: IMG3,
     title: 'BarysAuto',
     github: 'https://github.com/sardormirzakomilov/sertifikat_maket',
     demo: 'https://cars-prodaj.netlify.app/'
   },
-  {
-    id: 4,
-    image: IMG4,
-    title: 'Max Proff',
-    github: 'https://github.com/sardormirzakomilov/MaxProf',
-    demo: 'https://sardor-maxpro.netlify.app/'
-  },
+  
   {
     id: 5,
     image: IMG5,
@@ -52,6 +55,14 @@ const data = [
     github: 'https://github.com/sardormirzakomilov/shop',
     demo: 'https://shoppps.netlify.app/'
   },
+  {
+    id: 1,
+    image: IMG,
+    title: 'Trevland',
+    github: 'https://github.com/sardormirzakomilov/travlend',
+    demo: 'https://travlend-sardor.netlify.app/'
+  },
+ 
 ]
 const Portfolio = () => {
   useEffect(() => {

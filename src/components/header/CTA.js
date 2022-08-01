@@ -1,5 +1,5 @@
 import React from 'react'
-import CV from '../../assets/img/Sardor Mirzakomilov (1).pdf'
+import CV from '../../assets/img/Sardor Mirzakomilov.pdf'
 const CTA = () => {
     return (
         <div className='cta'>

@@ -116,3 +116,11 @@
         font-size: 1.7rem;
     }
 }
+
+
+@media screen and (max-width:510px) {
+.about_me-image img {
+    margin-top: -50px;
+}
+
+}
